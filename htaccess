@@ -1,0 +1,32 @@
+# Set a default home directory, (this subfolder always loads)
+# Replace 'folder' with your subfolder name
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # LogLevel debug rewrite_module:debug
+    # LogLevel warn mod_rewrite.c:trace4
+    RewriteRule ^$ /Prueba/breaking-medicine-Proyecto/frontend/main.php [END]
+    RewriteCond %{REQUEST_URI} admin.php
+        RewriteRule ^admin.php$ /Prueba/breaking-medicine-Proyecto/frontend/control_adm.php [END]
+    
+    RewriteRule ^([A-Za-z]*)\.(php|js|css)$ /Prueba/breaking-medicine-Proyecto/frontend/$1.$2 [END]
+    
+    
+    #RewriteRule ^resource/(.*)$ /Prueba/breaking-medicine-Proyecto/frontend/$1
+    RewriteRule ^backend/(.*)$ /Prueba/breaking-medicine-Proyecto/backend/$1 [END]
+    RewriteRule ^(.*)$ /Prueba/breaking-medicine-Proyecto/frontend/$1 [END]
+    
+    
+    
+    #RewriteCond %{REQUEST_URI} main.css
+    #    RewriteRule ^main.css$ /Prueba/breaking-medicine-Proyecto/frontend/main.css
+    # RewriteCond %{REQUEST_URI} 
+
+    #<If "%{REQUEST_FILENAME} == 'C:/wamp64/www/main.css'">
+    #    RewriteRule ^(.*)$ /Prueba/breaking-medicine-Proyecto/frontend/main.css?%{REQUEST_FILENAME}
+    #</if>
+    #<If "%{REQUEST_FILENAME} == %{REQUEST_URI}">
+    #    RewriteRule ^(.*)$ /Prueba/breaking-medicine-Proyecto/frontend/$1
+    #</if>
+</IfModule>
+# [R=301,L] %{REQUEST_FILENAME}
