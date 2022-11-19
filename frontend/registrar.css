@@ -1,0 +1,143 @@
+.form-container {
+    background-color: white;
+    width: 100%;
+    border: 10px;
+    overflow: hidden; /* Para asegurarse que el border radius se mantenga intacto */
+    height: 90%;
+    display: flex; /*para tener los elementos en linea */
+    align-items: center;
+    border-radius: 2%;
+}
+
+.form-container .register-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .register-container >h2 { /*Para seellecionar el h2 inmediato */
+text-align: center;
+font-size: 55px;
+}
+
+.form-container .register-container > p, 
+.form-container .register-container > span {
+text-align: center;
+color: #555;
+}
+
+.form-container .register-container label {
+display: block;
+font-weight: bold; /*Para hacerlo negrita*/
+padding: 5px 0;
+}
+
+.form-container .register-container input.input { /*Seleccionar los inputs con la clase input */
+display: block; /* PARA QUE OCUPEN TODO EL ANCHO*/
+width: 100%; /* PARA QUE OCUPEN TODO EL ANCHO*/
+box-sizing: border-box; /*Para que se adecue solo a su contenedor sino se desborda*/
+padding: 10px; /*Para que los inputs sean mas grandes */
+border: solid 1px #ccc;
+border-radius: 5px;
+}
+
+.form-container .register-container input.input:focus { /*Cuando seeleccionas el input cambia de color */
+    outline: solid 2px #0099ff; /*Para las lineas del input */
+}
+
+.form-container .register-container .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container a {
+    color:#0099ff;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    color:#005d9b;
+    text-decoration: underline; /*Para subrayarlo */
+}
+
+.form-container .ingresar {
+    font-size: 25px;
+   
+    font-weight: bold;
+}
+
+
+.form-container .register-container  {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+text-align: center;
+}
+
+.btn.btn-register {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 2px outset;
+}
+
+.btn.btn-register:hover {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+
+.btn.btn-register:active {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; 
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase; 
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+.btn.btn-register:focus {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border;
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 2px outset;
+}
+
+
+.nav-br /* Nav breaking medicine */
+ {
+    background-color: black;
+ }
+
+ .h1-titulo-breaking {
+    color: rgb(255, 255, 255);
+ }

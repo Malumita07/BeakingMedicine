@@ -1,0 +1,1180 @@
+
+$success: rgb(255, 255, 255); /* BLANCO PORQUE NO PODIA QUITAR EL BORDE VERDE*/
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.breaking-medicine-titulo {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 16px;
+}
+
+.logo-breaking-medicine {
+    width: 160px; 
+    height: 70px;
+}
+
+.boton-menu {
+    display: inline-block;
+    padding-right: 1px;
+    align-items: center;
+}
+
+.div-a {
+    display: inline-block;
+}
+
+                    /* El buscador */
+.fondo-negro{
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: white;
+    border-left: white;
+}
+
+.fondo-negro:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-color: black;
+    
+}
+
+.search-width {
+    width: 470px;
+}
+
+@media (max-width: 1170px) { 
+    .search-width {
+        width: 300px;
+       
+    }
+}
+
+.input-buscador{
+position: relative;
+right: 35px;
+border-radius: 0;
+}
+
+.input-buscador:active { /*Al mantener click hace */
+    position: relative;
+    right: 30px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+    right: 35px;
+    border-left: white;
+   
+}
+
+.input-buscador:focus{
+    position: relative;
+    right: 30px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+    right: 35px;
+    }
+
+.form-control:focus { /* Focus al darle click hace:*/
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset; /* Para sacarle los valores de bootstrap*/
+  }
+
+  .form-control {
+      border-color: black;
+  }
+
+
+
+
+ /* Logearse y Carrito, (me olvide de ponerle nombre de la clase al carrito) */
+
+ @media (max-width: 992px) { 
+    .carrito-principal {
+        display: none;
+       
+    }
+}
+
+@media (max-width: 992px) { 
+    .cuenta-fixed {
+        display: none;
+       
+    }
+}
+
+
+ .body-login {
+    padding-bottom:100px ;
+ }
+
+.login-register-color {
+ background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+ border-color: rgb(0, 0, 0);
+ width: 130px;
+}
+
+.login-register-color:hover {
+ background-color: rgb(226, 226, 226);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+}
+
+.login-register-color:active {
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+.login-register-color:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+.dropdown-item:active {
+    background-color: black;
+}
+
+
+            /*Segundo NAV categorias */
+
+.texto-letras a{
+    color: white;
+    
+}
+
+.texto-letras a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.texto-letras a:active{
+    color: rgb(0, 0, 0);
+    
+}
+
+.dropdown-segundo-nav a{
+    color: white; 
+}
+
+
+
+.dropdown-segundo-nav-despliegue a{
+    color: black;
+}
+
+.segundo-nav-ul li {
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+
+
+
+
+ /*PARTE DE REGISTRO ------------------------ PARTE DE REGISTRO------------------------------------ PARTE DE REGISTRO */
+
+ 
+
+ .form-container {
+    background-color: white;
+    width: 100%;
+    border: 10px;
+    height: 90%;
+    display: flex; /*para tener los elementos en linea */
+    align-items: center;
+}
+
+.form-container .register-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .register-container >h2 { /*Para seellecionar el h2 inmediato */
+text-align: center;
+font-size: 55px;
+}
+
+.form-container .register-container > p, 
+.form-container .register-container > span {
+text-align: center;
+color: #555;
+}
+
+.form-container .register-container label {
+display: block;
+font-weight: bold; /*Para hacerlo negrita*/
+padding: 5px 0;
+}
+
+.form-container .register-container input.input { /*Seleccionar los inputs con la clase input */
+display: block; /* PARA QUE OCUPEN TODO EL ANCHO*/
+width: 100%; /* PARA QUE OCUPEN TODO EL ANCHO*/
+box-sizing: border-box; /*Para que se adecue solo a su contenedor sino se desborda*/
+padding: 10px; /*Para que los inputs sean mas grandes */
+border: solid 1px #ccc;
+border-radius: 5px;
+}
+
+.form-container .register-container input.input:focus { /*Cuando seeleccionas el input cambia de color */
+    outline: solid 2px #0099ff; /*Para las lineas del input */
+}
+
+.form-container .register-container .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container a {
+    color:#0099ff;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    color:#005d9b;
+    text-decoration: underline; /*Para subrayarlo */
+}
+
+.form-container .ingresar {
+    font-size: 25px;
+   
+    font-weight: bold;
+}
+
+
+.form-container .register-container  {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+text-align: center;
+}
+
+.btn.btn-register {
+    border: none;
+    height: 70%;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+.btn.btn-register:hover {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+
+.btn.btn-register:active {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; 
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase; 
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+.btn.btn-register:focus {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border;
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+
+.nav-br /* Nav breaking medicine */
+ {
+    background-color: rgb(255, 255, 255);
+ }
+
+ .h1-titulo-breaking {
+    color: rgb(0, 0, 0)
+    
+ }
+
+ .caja-dropdown-nav {
+    background-image: black;
+    color: black;
+ }
+
+ .navbar-toggler {
+    position: absolute;
+    top: 3;
+    left: 3;
+   
+    
+ }
+
+ /* LOGIN     --------------------    LOGIN */
+ .login-container{
+    padding-bottom: 120px;
+ }
+
+
+ /*Body blanco */
+ .body-login-registrar {
+    background-color: rgb(255, 255, 255);
+}
+
+ .form-container {
+    background-color: white;
+    width: 100%;
+    border: 10px;
+    height: 90%;
+    display: flex; /*para tener los elementos en linea */
+    align-items: center;
+   
+}
+
+.form-container .login-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .login-container >h2 { /*Para seellecionar el h2 inmediato */
+text-align: center;
+font-size: 55px;
+}
+
+.form-container .login-container > p, 
+.form-container .login-container > span {
+text-align: center;
+color: #555;
+}
+
+.form-container .login-container label {
+display: block;
+font-weight: bold; /*Para hacerlo negrita*/
+padding: 5px 0;
+}
+
+.form-container .login-container input.input { /*Seleccionar los inputs con la clase input */
+display: block; /* PARA QUE OCUPEN TODO EL ANCHO*/
+width: 100%; /* PARA QUE OCUPEN TODO EL ANCHO*/
+box-sizing: border-box; /*Para que se adecue solo a su contenedor sino se desborda*/
+padding: 10px; /*Para que los inputs sean mas grandes */
+border: solid 1px #ccc;
+border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus { /*Cuando seeleccionas el input cambia de color */
+    outline: solid 2px #0099ff; /*Para las lineas del input */
+}
+
+.form-container .login-container .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container a {
+    color:#0099ff;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    color:#005d9b;
+    text-decoration: underline; /*Para subrayarlo */
+}
+
+.form-container .ingresar {
+    font-size: 25px;
+   
+    font-weight: bold;
+}
+
+
+.form-container .login-container  {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+text-align: center;
+}
+
+.btn.btn-login {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* Estilo de la barra de colores en el input de la contrasena de REGISTRO*/
+.bar_container {
+    width: 200px;
+    height: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  #password-length {
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px black;
+  }
+  .bad {
+    width: 34%;
+    background-color: red;
+  }
+  .good {
+    width: 68%;
+    background-color: orange;
+  }
+  .perfect {
+    width: 100%;
+    background-color: green;
+  }
+
+ 
+
+  .caja-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  
+  @media (max-width: 1353px) { 
+    .caja-botones {
+        width: 350px;
+       
+    }
+}
+@media (min-width: 1352px) { 
+    .caja-botones {
+        width: 500px;
+       
+    }
+}
+
+.boton-ira-adm {
+    position: absolute;
+}
+
+
+.btn-adm {
+    width: fit-content; /* Sirve para ajustar el contenido a la caja*/
+    border: none;
+    height: 5%;
+    padding: 7px 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px outset;
+    
+}
+
+.btn-adm:hover {
+    width: fit-content; /* Sirve para ajustar el contenido a la caja*/
+    border: none;
+    padding: 7px 0;
+    font-weight: border; /* no se pa que es investigar*/
+    display: block; /*Para que nuestro boton ocuype todo el ancho */
+    border-radius: 5px;
+    text-transform: uppercase; /* no se pa que es investigar*/
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+
+.btn-adm:active {
+    width: fit-content; /* Sirve para ajustar el contenido a la caja*/
+    border: none;
+    padding: 7px 0;
+    font-weight: border; 
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase; 
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+.btn-adm:focus {
+    width: fit-content; /* Sirve para ajustar el contenido a la caja*/
+    border: none;
+    padding: 7px 0;
+    font-weight: border;
+    display: block; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px outset;
+}
+
+.div-contra-boton-adm {
+    margin-top: 10px;
+}
+
+.botones-fixed {
+    position: relative;
+    left: 50px;
+}
+
+
+
+/* texto no entra caja, pusimo en administrador*/
+.no-entra {
+    width: fit-content;
+}
+
+.no-entra:hover {
+    width: fit-content;
+}
+
+.no-entra:active {
+    width: fit-content;
+}
+
+.no-entra:focus{
+    width: fit-content;
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 20px auto 15px auto;
+}
+
+.titulo-adm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-adm h1 {
+    font-size: 50px;
+}
+
+.main-adm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   overflow: auto;
+   padding-bottom: 12px;
+}
+
+.main-adm div {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.main-adm div label {
+    width: 20%;
+    
+}
+
+.contenedor-adm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+.buscador-adm {
+    width: 100%;
+    height: 350px;
+    background: #bf7130;
+    padding: 10px;
+    margin: 0 15px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.adm-modificar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adm-provedoores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+}
+
+
+
+.moverlo-a-la-izquierda {
+    padding-right: 100px;
+}
+
+
+
+.tabla-adm tr {
+    border-bottom: 2px solid rgb(0, 67, 122);
+}
+
+.tabla-adm {
+    width: 100%;
+    margin-top: 0;
+    height: auto;
+    margin: auto;
+}
+
+.tr-adm td{
+    background-color: rgb(0, 78, 142);
+    word-break: break-all;
+    width: fit-content;
+}
+
+.buscador-adm table tr {
+    background-color: #ccc;
+}
+.caja-adm-principal {
+    box-sizing: content-box;
+    width: 550px;
+    height: 550px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    overflow: auto;
+    border: 2px black solid;
+  }
+
+  .tabla-adm-madre {
+    width: 100%;
+    max-height: 500px;
+    height: 300px;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    overflow-y: scroll;
+}
+  @media (max-width: 1353px) { 
+    .caja-adm-principal {
+        width: 400px;
+       
+    }
+}
+@media (min-width: 1352px) { 
+    .caja-adm-principal {
+        width: 550px;
+       
+    }
+}
+
+
+
+/*           BOTON REESPONSIVO DEL NAVBAR */
+
+
+.button-responsive {
+    position: absolute;
+   left: 50;
+   right: 0;
+   width: 50px;
+   height: 50px;
+ 
+
+}
+
+/* SEGUNDO NAV */
+.titulo-responsivo {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: 1px;
+    display: flex;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991.98px) { 
+    .segundo-nav {
+      display: none;
+    }
+    .breaking-medicine-titulo{
+        display: none;
+    }
+    
+  }
+
+  @media (min-width: 991.98px) { 
+    .elementos-menu-responsive {
+      display: none;
+    }
+    .titulo-responsivo {
+        display: none;
+    }
+    .menor-menu {
+        display: none;
+        width: 0%;
+        height: 0%;
+        padding: 0%;
+    }
+    .offcanvas-start {
+        display: none;
+    }
+    
+  }
+
+  
+  
+ 
+
+
+  /* Elementos del menu responsivo */
+ 
+/* Para arreglar la responsividad del boton cuenta del modo pc */
+@media (max-width: 991.98px) { 
+    .Cuenta-responsive  {
+      display: none;
+    }
+}
+
+.cuenta-Responsive {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+  .elementos-menu-responsive {
+    width: 373px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    border-bottom: rgb(145, 145, 145) 1px solid;
+    border-radius: 0%;
+  }
+  .elementos-menu-responsive:hover {
+    border-bottom: rgb(194, 194, 194) 1px solid;
+    
+  }
+
+  .boton-menu-responsivo {
+    border: black;
+    margin-left: 1px;
+  }
+
+
+
+
+
+  /*             Perfil del usuario              */ 
+
+.caja-foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    border: 1px black solid;
+    margin-top: 10px;
+    padding: 10px;
+}
+.body-perfil {
+    background-color: rgb(146, 134, 134);
+}
+
+@media (max-width: 725px) { 
+    .caja-foto-perfil {
+        width: 500px;
+       
+    }
+}
+
+@media (max-width: 535px) { 
+    .caja-foto-perfil {
+        width: 300px;
+       
+    }
+}
+@media (max-width: 535px) { 
+    .caja-foto-perfil input {
+        width: 200px;
+      margin-left: 100px;
+    }
+}
+
+.caja-foto-perfil input {
+border: 1px solid black;
+}
+
+.caja-form-perfil {
+    width: 450px;
+}
+
+.navbar-brand {
+    width: auto;
+}
+
+.formulario-buscador {
+    width: auto;
+}
+
+/* Parte de Carousel */
+
+
+@media (max-width: 991.98px) { 
+    .carousel {
+      display: none;
+    }
+}
+
+
+/* CATALOGO */
+
+.caja-principal-catalogo {
+    width: 100%;
+}
+
+.boton-ok {   /* botok ok*/
+    width: 15px;
+    height: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.body-farmacia-catalogo {
+    background-color: white;
+}
+
+.caja-productos-cat a {
+    font-size: 18px;
+}
+
+
+
+/* SEARCH RESPONSIVO*/
+
+
+
+
+
+.container-search-responsivo {
+    position: relative;
+    margin: auto;
+    top: 30;
+    left: 0;
+    right: 70;
+    bottom: 0;
+    width: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    .search-responsivo {
+        display: flex;
+    align-items: center;
+      position: relative;
+      margin: auto;
+      top: 30;
+      right: 60;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      transition: all 0s;
+      z-index: 4;
+      &:hover {
+        cursor: pointer;
+      }
+     
+   
+    }
+    input {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 10;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      outline: none;
+      border: none;
+      // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      padding: 40px 40px 40px 10px ;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      transition: all 0.5s;
+      opacity: 0;
+      z-index: 5;
+      font-family: arial;
+      font-weight: bolder;
+      letter-spacing: 0.1em;
+      &:hover {
+        cursor: pointer;
+      }
+      &:focus {
+        width: 730.98px;
+        opacity: 1;
+        cursor: text;
+      }
+      @media (max-width: 782.98px) { 
+        &:focus {
+            width: 590.98px;
+            opacity: 1;
+            cursor: text;
+          }
+    }
+
+
+      @media (max-width: 682.98px) { 
+        &:focus {
+            width: 430.98px;
+            opacity: 1;
+            cursor: text;
+          }
+    }
+
+    @media (max-width: 525.98px) { 
+        &:focus {
+            width: 330.98px;
+            opacity: 1;
+            cursor: text;
+          }
+    }
+    @media (max-width: 421.98px) { 
+        &:focus {
+            width: 240.98px;
+            opacity: 1;
+            cursor: text;
+          }
+    }
+}
+  }
+ 
+  
+
+  @media (max-width: 991.98px) { 
+    .div-search-responsivo {
+      display: none;
+    }
+}
+
+@media (min-width: 991.98px) { 
+    .container-search-responsivo {
+      display: none;
+    }
+}
+
+
+/* Carrito navbar */
+
+
+.carrito-navbar {
+width: 286px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+
+.boton-carrito-mini {
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+    color: white;
+    display: inline-block;
+  height: 45px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.boton-carrito-mini-a {
+    display: inline-block;
+    width: 100%;
+}
+.item-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+}
+
+.item-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 2px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.item-rigth {
+    position: relative;
+    right: 2px;
+    left: 20px;
+    margin: 0;
+}
+
+.img-carrito-mini {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.basura-mini-carrito {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border: none;
+    right: 0;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-carrito {
+    margin-bottom: 0px;
+    align-items: center;
+    display: flex;
+}
+
+.div-footer-carrito {
+    border-radius: 0.375rem;
+    width: 100%;
+    background: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-agregar-al-carrito {
+    color: black;
+    border: 0.5px black solid;
+}
+
+.boton-agregar-al-carrito:hover {
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
+
+.boton-agregar-al-carrito:focus {
+    background-color: none;
+}
+
+.boton-agregar-al-carrito:active {
+    background-color: rgb(16, 16, 16);
+    color: white;
+    border: 0.5px rgb(255, 255, 255) solid;
+}
+
+
+
+@media (max-width: 768px) { 
+    .img-responsive-carrito {
+        width: 80px;
+        height: 80px;
+       
+    }
+}
+
+/* Administrador */
+
+
+
+
+
+/* Sobre nosotros*/
+.sobre-nosotros {
+    background-color: rgb(255, 255, 255);
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+/* FOOTER*/
+
+.body-footer {
+    background-color: rgb(47, 47, 47);
+}

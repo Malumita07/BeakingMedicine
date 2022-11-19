@@ -1,0 +1,15 @@
+<?php 
+include 'conexion.php';
+
+
+if ($_POST['insertar-nombre'] != '' && $_POST['insertar-descripcion'] != '' && $_POST['insertar-precio'] != '' && $_POST['insertar-stock'] != '' && $_POST['insertar-estado'] != '') {
+    $nombreinsert = $_POST['insertar-nombre'];
+    $descripcioninsert = $_POST['insertar-descripcion'];
+    $precioinsert = $_POST['insertar-precio'];
+    $stockinsert = $_POST['insertar-stock'];
+    $estadoinsert = $_POST['insertar-estado'];
+    $bd = new Conexion();
+    $bd->Conectar();
+    $query = "INSERT INTO articulos VALUES(NULL, ".$Id_PInsert.", '".$nombreinsert."', '".$descripcioninsert."', ".$precioinsert.", ".$stockinsert.", )";
+}
+?>
